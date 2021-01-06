@@ -37,9 +37,7 @@ public class ServletNouvelleVente extends HttpServlet {
 		HttpSession session = request.getSession();
 		
 		User user = (User) session.getAttribute("user");
-		//User recupUser = encheresManager.Edao.findByIdUser(user.getId());
 		System.out.println(user);
-		//System.out.println(recupUser);
 		
 		String cat = request.getParameter("categorie");
 		int noCategorie = Integer.parseInt(cat);
