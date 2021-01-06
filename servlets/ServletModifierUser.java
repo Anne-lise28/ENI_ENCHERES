@@ -50,7 +50,6 @@ public class ServletModifierUser extends HttpServlet {
 			e.printStackTrace();
 		}
 		
-		//this.getServletContext().getRequestDispatcher("/WEB-INF/JSP/modifUser.jsp").forward(request, response);
 	}
 
 }
