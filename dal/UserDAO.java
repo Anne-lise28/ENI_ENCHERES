@@ -122,7 +122,7 @@ public class UserDAO{
 		
 		String req = "UPDATE Users SET pseudo=?, nom=?, prenom=?, email=?, tel=?, adresse=?, adresse2=?, ville=?, cp=? WHERE id=?";
 		 
-		//if (ConnectionProvider.getConnection() != null) {
+		if (ConnectionProvider.getConnection() != null) {
 			
 			try {
 				PreparedStatement pstmt = ConnectionProvider.getConnection().prepareStatement(req);
@@ -145,7 +145,7 @@ public class UserDAO{
 			} catch (SQLException e) {
 				e.printStackTrace();
 			}
-		//}
+		}
 		return user;
 	}
 
