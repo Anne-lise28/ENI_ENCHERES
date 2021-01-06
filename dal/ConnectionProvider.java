@@ -43,26 +43,5 @@ abstract class ConnectionProvider {//sert a obtenir une connexion et est visible
 	}
 }
 	
-/*public  Connection getConnection() {
-	
-		Connection cnx = null;
-		try {
-			Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
-		} catch (ClassNotFoundException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} 
-		String url = "jdbc:sqlserver://localhost:1433;database=ENCHERES";
-		try {
-			cnx = DriverManager.getConnection(url, "sa", "Pa$$w0rd");
-			System.out.println("La connexion à réussi !");
-		} catch (SQLException e) {
-			System.out.println("La connexion à échoué !");
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		return cnx;
-	}
-}*/
-	
+
 	
